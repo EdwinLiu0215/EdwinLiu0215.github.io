@@ -1,24 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Edwin Liu is a mechanical engineering student at Purdue University working across product development, testing, and automation.">
+  <meta name="theme-color" content="#f4f2ed">
+  <title>Edwin Liu · Mechanical Engineering</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Edwin Liu, back to top"><span class="brand-mark" aria-hidden="true">EL</span><strong>Edwin Liu</strong><span class="brand-note">ME · Purdue</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="Resume_Version2.pdf" target="_blank" rel="noopener">Resume <span class="sr-only">(PDF, opens in a new tab)</span></a>
+      </nav>
+    </div>
+  </header>
 
-    <h1>Welcome to My Website</h1>
-    <p>This is a simple paragraph describing the purpose of this basic HTML site.</p>
+  <main id="main">
+    <section class="hero wrap" id="top" aria-labelledby="intro-title">
+      <p class="eyebrow">Mechanical engineering · Design · Automation</p>
+      <h1 id="intro-title">Edwin Liu<span class="period">.</span></h1>
+      <p class="intro">I'm a mechanical engineering student at Purdue University, with minors in management and Chinese. I like taking ideas from a first design to a tested prototype. At GE Appliances, I worked on microwave validation and a water quality sensor; at Eagle Vision and Automation, I programmed equipment to make production more efficient.</p>
+      <div class="hero-links"><a href="#projects">Explore my work <span aria-hidden="true">↘</span></a><a href="https://www.linkedin.com/in/edwin-liu0215/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div>
+    </section>
 
-    <h2>Things I Learn Today:</h2>
-    <ul>
-        <li>How to structure a web page</li>
-        <li>How to add headings and text</li>
-        <li>How to use lists and links</li>
-    </ul>
+    <section class="section wrap" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading"><span class="section-number">01 / Selected work</span><h2 id="projects-title">Projects</h2></div>
+      <div class="project-list">
+        <article class="project-row"><div class="project-date">2026</div><div><h3>Water Quality Sensor</h3><p>Designed a sensor subsystem and custom conductivity sensor for a water quality concept at GE Appliances. Calibrated the sensor with Arduino IDE and Excel, and demonstrated a functional prototype at the Co-op Design Competition.</p><p class="tags">Creo Parametric · Sensors · Prototyping · Invention disclosure</p></div><span class="row-mark" aria-hidden="true">↗</span></article>
+        <article class="project-row"><div class="project-date">Fall 2026</div><div><h3>Heat Sink Optimization</h3><p>Developed a test setup to compare the effects of heat sink geometry and coolant choice on semiconductor heat transfer, using a PVC flow loop, machined test plate, heater, and thermocouples.</p><p class="tags">Thermal design · Experimental testing · Siemens NX</p></div><span class="row-mark" aria-hidden="true">↗</span></article>
+        <article class="project-row"><div class="project-date">2023</div><div><h3>ASME Racing Drone</h3><p>Designed, built, and tested a racing drone for Purdue ASME's competition with a $150 budget. Modeled and iterated the frame in SolidWorks, selected components, and assembled the electronics.</p><p class="tags">CAD · Prototyping · Electronics · Team leadership</p></div><span class="row-mark" aria-hidden="true">↗</span></article>
+        <article class="project-row"><div class="project-date">2023</div><div><h3>Tank Gacha Game</h3><p>Programmed a two-player game in JavaScript using Greenfoot, including controls, combat, and a tank and weapon collection system.</p><p class="tags">JavaScript · Game development</p></div><span class="row-mark" aria-hidden="true">↗</span></article>
+      </div>
+    </section>
 
-    <h2>Useful Resources</h2>
-    <p>You can learn more about web development at the <a href="https://www.w3schools.com" target="_blank">W3Schools Official Platform</a>.</p>
+    <section class="section wrap" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading"><span class="section-number">02 / In practice</span><h2 id="experience-title">Experience</h2></div>
+      <article class="experience-row"><div class="experience-meta"><span>Jan – May 2026</span><span>Louisville, KY</span></div><div><h3>Advanced Development Engineer</h3><p class="organization">GE Appliances, a Haier company</p><ul><li>Tested new microwave technology and achieved 96% accuracy against target specifications.</li><li>Used Python and heat transfer principles to develop a power profile with a global engineering team.</li><li>Automated microwave testing using the Postman API and SmartHQ app.</li><li>Designed and demonstrated a water quality sensing prototype with a cross-functional team.</li></ul></div></article>
+      <article class="experience-row"><div class="experience-meta"><span>May – Jul 2025</span><span>Yorba Linda, CA</span></div><div><h3>Automation Engineer</h3><p class="organization">Eagle Vision and Automation</p><ul><li>Programmed sandblaster motion in DirectSOFT ladder logic, reducing setup time by 70%.</li><li>Built HMI screens and programmed a PLC-driven helicoil driver with custom 3D printed components, reducing defects by 33%.</li><li>Developed a tray removal process for conveyor buildup and drafted a SolidWorks wiring schematic for the MiraAI Vision Robot.</li></ul></div></article>
+    </section>
 
+    <section class="section wrap" id="education" aria-labelledby="education-title">
+      <div class="section-heading"><span class="section-number">03 / Foundation</span><h2 id="education-title">Education</h2></div>
+      <div class="info-row"><div class="muted">Aug 2023 – May 2027<br>West Lafayette, IN</div><div><h3>Purdue University</h3><p>B.S. Mechanical Engineering · Minors in Management and Chinese</p><p class="subtle">ASME Small Projects Team Design Leader · Symphony Orchestra Section Leader · Intramural Basketball Captain · Chinese Calligraphy Club</p></div></div>
+    </section>
+
+    <section class="section wrap" id="skills" aria-labelledby="skills-title">
+      <div class="section-heading"><span class="section-number">04 / Toolkit</span><h2 id="skills-title">Tools &amp; skills</h2></div>
+      <div class="skills-grid"><div><h3>Design &amp; analysis</h3><p>Creo Parametric · SolidWorks · Siemens NX · Fusion 360 · Abaqus FEA · 3D printing</p></div><div><h3>Programming &amp; automation</h3><p>Python · C/C++ · MATLAB · Simulink · PLC programming · Postman API</p></div><div><h3>Testing &amp; prototyping</h3><p>Arduino IDE · Excel modeling · Breadboarding · Soldering · Sensor calibration</p></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact"><div class="wrap footer-grid"><div><span class="section-number">05 / Get in touch</span><h2>Let's connect.</h2><p>Interested in mechanical design, testing, or automation? I'd be glad to talk.</p><a class="email" href="mailto:edw1nl1u0215@gmail.com">edw1nl1u0215@gmail.com <span aria-hidden="true">↗</span></a></div><div class="footer-links"><a href="https://www.linkedin.com/in/edwin-liu0215/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="Resume_Version2.pdf" target="_blank" rel="noopener">Resume PDF ↗</a><a href="#top">Back to top ↑</a></div></div><div class="wrap copyright">© 2026 Edwin Liu · Built for GitHub Pages</div></footer>
 </body>
 </html>
